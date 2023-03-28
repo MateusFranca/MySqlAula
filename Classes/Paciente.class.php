@@ -30,7 +30,7 @@ class Paciente extends Crud{
         VALUES ('$nome', '$endereco', '$bairro', '$cidade', '$estado', '$cep', '$nascimento', '$email', '$celular', 'oi')";
         
         if(Conexao::query($sqlInsert)){
-            header('location: pacientes.php');
+            header('location: pacientes.php'); // mudar aqui 
         }
     }
 
